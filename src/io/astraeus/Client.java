@@ -2708,7 +2708,7 @@ public class Client extends GameApplet {
 		for (int j = 0; j < 7; j++) {
 			anIntArray1065[j] = -1;
 			for (int k = 0; k < IdentityKit.length; k++) {
-				if (IdentityKit.kits[k].validStyle || IdentityKit.kits[k].part != j + (maleCharacter ? 0 : 7))
+				if (IdentityKit.kits[k].validStyle || IdentityKit.kits[k].bodyPartId != j + (maleCharacter ? 0 : 7))
 					continue;
 				anIntArray1065[j] = k;
 				break;
@@ -2862,7 +2862,7 @@ public class Client extends GameApplet {
 						i2 = IdentityKit.length - 1;
 					if (j1 == 1 && ++i2 >= IdentityKit.length)
 						i2 = 0;
-				} while (IdentityKit.kits[i2].validStyle || IdentityKit.kits[i2].part != k + (maleCharacter ? 0 : 7));
+				} while (IdentityKit.kits[i2].validStyle || IdentityKit.kits[i2].bodyPartId != k + (maleCharacter ? 0 : 7));
 				anIntArray1065[k] = i2;
 				aBoolean1031 = true;
 			}
