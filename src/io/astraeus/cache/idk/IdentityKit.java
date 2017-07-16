@@ -1,6 +1,7 @@
-package io.astraeus.entity.model;
+package io.astraeus.cache.idk;
 
 import io.astraeus.cache.FileArchive;
+import io.astraeus.entity.model.Model;
 import io.astraeus.io.Buffer;
 
 public final class IdentityKit {
